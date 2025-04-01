@@ -32,56 +32,86 @@
     </div>
   </section>
 
-  <section class="bg-gray-900 py-16 px-6 md:px-12 relative">
-    <!-- Inner Gradient Shadow (top part) -->
-    <div class="absolute opacity-55 inset-x-0 top-0 h-12 bg-gradient-to-b from-primary-500 to-transparent shadow-lg"></div>
+  <div class="bg-gray-900 py-24 border-y-2 border-primary sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">
+          Our Services</p>
+        <p class="mt-6 text-lg/8 text-gray-400">We provide a range of digital solutions to help businesses grow and
+          succeed.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
 
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl font-extrabold text-white mb-6">Our Services</h2>
-      <p class="text-gray-300 text-lg mb-12">We provide a range of digital solutions to help businesses grow and
-        succeed.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="bg-transparent p-6 rounded-lg text-start">
-          <div class="flex justify-start mb-4">
-            <span class="text-[#00DC82] text-4xl">
-              <Icon name="ph-desktop" class="size-7 flex-shrink-0 leading-none" />
-            </span>
+          <!-- Feature 1: Push to deploy -->
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+              <Icon name="ph-desktop" class="size-5 flex-none text-primary" aria-hidden="true" />
+              Web Development
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+              <p class="flex-auto">
+                Custom websites built with the latest technologies to ensure performance and
+                scalability.
+              </p>
+            </dd>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Web Development</h3>
-          <p class="text-gray-400">Custom websites built with the latest technologies to ensure performance and
-            scalability.</p>
-        </div>
 
-        <!-- Service 2 -->
-        <div class="bg-transparent p-6 rounded-lg text-start">
-          <div class="flex justify-start mb-4">
-            <span class="text-[#00DC82] text-4xl">
-              <Icon name="ph-android-logo" class="size-7 flex-shrink-0 leading-none" />
-            </span>
+          <!-- Feature 2: SSL certificates -->
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+              <Icon name="ph-android-logo" class="size-5 flex-none text-primary" aria-hidden="true" />
+              Mobile App Development
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+              <p class="flex-auto">
+                High-quality mobile applications tailored to your business needs.
+              </p>
+            </dd>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Mobile App Development</h3>
-          <p class="text-gray-400">High-quality mobile applications tailored to your business needs.</p>
-        </div>
 
-        <!-- Service 3 -->
-        <div class="bg-transparent p-6 rounded-lg text-start">
-          <div class="flex justify-start mb-4">
-            <span class="text-[#00DC82] text-4xl">
-              <Icon name="ph-code" class="size-7 flex-shrink-0 leading-none" />
-            </span>
+          <!-- Feature 3: Simple queues -->
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
+              <Icon name="ph-code" class="size-5 flex-none text-primary" aria-hidden="true" />
+              Software Solutions
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-400">
+              <p class="flex-auto">
+                Robust and scalable software solutions to enhance business operations.
+              </p>
+            </dd>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Software Solutions</h3>
-          <p class="text-gray-400">Robust and scalable software solutions to enhance business operations.</p>
-        </div>
+        </dl>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'HeroSection'
-}
+<script setup>
+import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/vue/20/solid'
+
+const features = [
+  {
+    name: 'Push to deploy',
+    description:
+      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+    href: '#',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates',
+    description:
+      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+    href: '#',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Simple queues',
+    description:
+      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
+]
 </script>
