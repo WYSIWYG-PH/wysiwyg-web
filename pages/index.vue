@@ -1,8 +1,8 @@
 <template>
   <section class="flex min-h-[500px] bg-gray-900 relative overflow-hidden">
-    <div class="w-full flex flex-col md:flex-row items-center">
+    <div class="w-full flex flex-col md:flex-row items-center h-screen">
       <!-- Left Content -->
-      <div class="w-full md:w-1/2 px-6 md:px-8 lg:px-12 xl:px-16 py-12 text-center md:text-left">
+      <div class="w-full md:w-1/2 px-6 md:px-8 lg:px-12 xl:px-16 py-12 text-center md:text-left ">
         <!-- Main Heading -->
         <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
           Driving business success with <span class="text-primary">innovative solutions.</span>
