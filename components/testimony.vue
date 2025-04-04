@@ -11,7 +11,7 @@
                 </p>
             </div>
 
-            <!-- Testimonials Grid - Rearranged -->
+        
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div v-for="(testimonial, index) in testimonials" :key="testimonial.id"
                     class="relative rounded-2xl bg-gray-800/50 p-6 shadow-lg border border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/30"
