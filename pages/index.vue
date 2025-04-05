@@ -1,8 +1,9 @@
 <template>
     <Hero />
     <Services />
-    <Team />
+    <Projects />
     <Testimony />
+    <Team />
     <Footer />
 </template>
 

@@ -11,7 +11,7 @@
 
         <div class="absolute inset-0 flex items-center justify-center md:hidden">
             <div class="w-full px-6 py-12 text-center flex flex-col items-center">
-                <h1 class="text-3xl font-extrabold text-white leading-tight mb-6">
+                <h1 class="text-4xl font-extrabold text-white leading-tight mb-6">
                     <span v-motion :initial="{ opacity: 0, y: 20 }"
                         :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
                         Driving business success with
@@ -56,7 +56,7 @@
 
         <!-- Desktop view: Exactly as in the original -->
         <div class="hidden md:flex w-full flex-row items-center h-screen">
-            <div class="w-1/2 px-8 lg:px-12 xl:px-16 py-12 text-left">
+            <div class="w-2/3 px-8 lg:px-12 xl:px-16 py-12 text-left">
                 <h1 class="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
                     <span v-motion :initial="{ opacity: 0, y: 20 }"
                         :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }">
