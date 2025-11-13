@@ -19,6 +19,13 @@ const projects = [
         category: "Web Development",
         link: "https://xny-zeta.vercel.app/"
     },
+    {
+        title: "DC Cakes",
+        description: "A website for a cake shop that allows customers to browse the menu.",
+        image: "/images/dccakes.png",
+        category: "Web Development",
+        link: "https://dc-cakes.vercel.app/"
+    }
 ];
 
 export default projects;
