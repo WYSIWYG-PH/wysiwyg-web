@@ -1,5 +1,17 @@
 <template>
-    <div class="bg-slate-950 py-24 sm:py-32 ">
+    <div class="bg-slate-950 py-24 sm:py-32 relative">
+        <!-- ONE quote icon for whole section -->
+        <div class="absolute top-8 right-8 text-green-500/40">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" class="opacity-80">
+                <path
+                    d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c1.25 0 2 .75 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z">
+                </path>
+                <path
+                    d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c1.25 0 .75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z">
+                </path>
+            </svg>
+        </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <!-- Header Section - Centered -->
             <div class="mx-auto max-w-2xl text-center mb-16" v-motion :initial="{ opacity: 0, y: 30 }"
@@ -11,7 +23,7 @@
                 </p>
             </div>
 
-        
+
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div v-for="(testimonial, index) in testimonials" :key="testimonial.id"
                     class="relative rounded-2xl bg-gray-800/50 p-6 shadow-lg border border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/30"
@@ -25,17 +37,6 @@
                         }
                     }">
                     <!-- Quote icon -->
-                    <div class="absolute top-6 right-6 text-green-500/50">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" class="opacity-60">
-                            <path
-                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z">
-                            </path>
-                            <path
-                                d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z">
-                            </path>
-                        </svg>
-                    </div>
 
                     <!-- Quote text -->
                     <p class="text-base italic text-gray-300 mb-8">"{{ testimonial.quote }}"</p>
