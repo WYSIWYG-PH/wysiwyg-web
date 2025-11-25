@@ -16,9 +16,9 @@ const testimonials = [
   {
     id: 3,
     quote: "A truly collaborative experience from start to finish. They understood our needs and delivered solutions that helped us grow.",
-    name: "Emily Rodriguez",
-    company: "Marketing Director, GrowthLabs",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    name: "Decee Grace Casipe",
+    company: "Owner, DC Cakes",
+    image: "/images/dccakes_logo.jpg"
   },
 ];
 
