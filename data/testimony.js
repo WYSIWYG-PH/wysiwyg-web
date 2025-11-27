@@ -1,14 +1,14 @@
 const testimonials = [
   {
     id: 1,
-    quote: "Working with this team transformed our business. Their attention to detail and innovative solutions exceeded our expectations.",
+    quote: "I’m extremely pleased with the website they built. They understood our requirements perfectly and delivered a product that exceeded our expectations. Thank you for being professional, responsive, and creative.",
     name: "Yuan Rafael Tagawa",
     company: "Owner, UniLux",
     image: "/images/unilux_logo.jpg"
   },
   {
     id: 2,
-    quote: "DevBiz delivered exactly what I envision fast, reliable, and truly skilled at turning ideas into a smooth, professional website.",
+    quote: "They delivered exactly what I envision fast, reliable, and truly skilled at turning ideas into a smooth, professional website.",
     name: "Cynel Isiah Comaling",
     company: "Owner, XNY Event and Food services",
     image: "/images/xny_logo.jpg"
