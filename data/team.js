@@ -8,7 +8,7 @@ const teamMembers = [
   },
   {
     name: "Erman Faminiano",
-    position: "Founder/Full Stack Web/Mobile Developer",
+    position: "Co Founder/Full Stack Web/Mobile Developer",
     image: "/images/founder_2.jpg",
     description:
       "Erman has extensive freelance experience, delivering a wide range of full-stack and mobile development projects for clients across different industries. He also leads tech workshops, sharing his knowledge in modern development practices and helping aspiring developers strengthen their skills.",
