@@ -47,8 +47,9 @@
                     }
                 }">
                     <button
-                        class="bg-primary text-gray-900 px-6 py-3 rounded-md font-medium transition duration-300 hover:bg-primary-400 hover:shadow-[0_0_15px_4px_rgba(0,220,130,0.7)]">
-                        Discover more
+                        class="bg-primary text-gray-800 px-6 py-3 rounded-md font-medium transition duration-300 hover:bg-primary-400 hover:shadow-[0_0_15px_4px_rgba(0,220,130,0.7)]"
+                        onclick="window.location.href='https://www.facebook.com/profile.php?id=61586726650291'">
+                        Visit Us
                     </button>
                 </div>
             </div>
