@@ -49,27 +49,23 @@
                     <div class="flex transition-transform duration-500 ease-in-out"
                         :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
                         <div v-for="(group, groupIndex) in testimonialGroups" :key="groupIndex"
-                            class="w-full flex-shrink-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            class="w-full flex-shrink-0 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
                             <div v-for="testimonial in group" :key="testimonial.id"
-                                class="relative rounded-2xl bg-gray-800/50 p-6 shadow-lg border border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/30 h-full"
-                                v-motion :initial="{ opacity: 0, scale: 0.9 }" :visible="{
-                                    opacity: 1,
-                                    scale: 1,
-                                    transition: {
-                                        duration: 600,
-                                        ease: 'easeOut'
-                                    }
-                                }">
-                                <!-- Quote text -->
-                                <p class="text-base italic text-gray-300 mb-8">"{{ testimonial.quote }}"</p>
+                                class="relative rounded-2xl bg-gray-800/50 p-6 shadow-lg border border-green-500 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/30 flex flex-col h-full"
+                                v-motion :initial="{ opacity: 0, scale: 0.9 }"
+                                :visible="{ opacity: 1, scale: 1, transition: { duration: 600, ease: 'easeOut' } }">
 
-                                <!-- Author info - Horizontal layout -->
-                                <div class="flex items-center gap-x-4 mt-6 pt-6 border-t border-green-500/30">
-                                    <img class="size-12 rounded-full object-cover ring-2 ring-green-500/50" :src="testimonial.image"
-                                        :alt="testimonial.name">
+                                <!-- Quote text - flex-grow to fill space -->
+                                <p class="text-base italic text-gray-300 mb-6 flex-grow">"{{ testimonial.quote }}"</p>
+
+                                <!-- Fixed Author info -->
+                                <div class="flex items-center gap-x-4 mt-auto pt-4 border-t border-green-500/30">
+                                    <img class="w-12 h-12 rounded-full object-cover ring-2 ring-green-500/50"
+                                        :src="testimonial.image" :alt="testimonial.name">
                                     <div>
-                                        <h3 class="text-base font-semibold tracking-tight text-white">{{ testimonial.name }}</h3>
-                                        <p class="text-sm font-semibold text-primary">{{ testimonial.company }}</p>
+                                        <h3 class="text-base font-semibold tracking-tight text-white">{{
+                                            testimonial.name }}</h3>
+                                        <p class="text-sm font-semibold text-green-400">{{ testimonial.company }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +90,7 @@ import { ref, computed } from 'vue';
 import testimonials from '~/data/testimony';
 
 const currentSlide = ref(0);
-const cardsPerView = 3;
+const cardsPerView = 4;
 
 // Calculate total number of slides
 const totalSlides = computed(() => {
